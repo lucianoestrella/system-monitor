@@ -1,0 +1,38 @@
+# ============================================================================
+# REQUIREMENTS.TXT - System Monitor
+# ============================================================================
+# Dependências do projeto de monitoramento de sistema
+# Compatível com Windows e Linux
+#
+# Instalação:
+#   pip install -r requirements.txt
+# ============================================================================
+
+# === CORE - Monitoramento de Sistema ===
+psutil>=5.9.0              # Informações de CPU, RAM, disco, rede, processos
+
+# === INTERFACE CLI ===
+rich>=13.0.0               # Interface CLI colorida e formatada
+
+# === INTERFACE GUI ===
+customtkinter>=5.0.0       # Interface gráfica moderna (baseada em Tkinter)
+
+# === REDE ===
+pythonping>=1.1.0          # Testes de ping (opcional, se você usa)
+
+# === GPU (Opcional - Windows) ===
+# GPUtil>=1.4.0            # Informações de GPU NVIDIA (descomente se necessário)
+
+# === WINDOWS ESPECÍFICO (Opcional) ===
+# pywin32>=305             # Acesso a APIs do Windows (WMI, etc.)
+# wmi>=1.5.1               # Windows Management Instrumentation
+
+# === RELATÓRIOS (Removido PDF) ===
+# fpdf2 foi removido - agora só gera TXT
+
+# ============================================================================
+# NOTAS:
+# - Para GPU NVIDIA: descomente GPUtil
+# - Para recursos avançados Windows: descomente pywin32 e wmi
+# - No Linux, pywin32 e wmi não são necessários
+# ============================================================================
